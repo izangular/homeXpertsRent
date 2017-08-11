@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rsJ-3n-eZx">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Camera View Controller-->
+        <scene sceneID="cOW-z0-I9s">
+            <objects>
+                <viewController storyboardIdentifier="CameraViewController" id="rsJ-3n-eZx" customClass="CameraViewController" customModule="ISpotPrice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d9J-ws-z2c"/>
+                        <viewControllerLayoutGuide type="bottom" id="v0z-rr-Vce"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zeh-0R-OCc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-SR-4Yb" userLabel="PreviewView">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bqv-SR-4Yb" firstAttribute="leading" secondItem="Zeh-0R-OCc" secondAttribute="leadingMargin" id="8E4-2M-sHl"/>
+                            <constraint firstItem="Bqv-SR-4Yb" firstAttribute="top" secondItem="d9J-ws-z2c" secondAttribute="bottom" id="9gM-pJ-oG6"/>
+                            <constraint firstItem="v0z-rr-Vce" firstAttribute="top" secondItem="Bqv-SR-4Yb" secondAttribute="bottom" id="q6t-w2-SZk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bqv-SR-4Yb" secondAttribute="trailing" id="s3X-hC-VYM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="previewView" destination="Bqv-SR-4Yb" id="4dO-xB-ayj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44k-zR-88K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-321" y="-189"/>
+        </scene>
+    </scenes>
+</document>
