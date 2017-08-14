@@ -255,14 +255,14 @@ class APIService {
         manager.request(urlRequest)
             .validate()
             .responseJSON{ response in
-//                print (response.request!)
-//                print(response.response!)
-//                print(response.result)
+                print (response.request!)
+                print(response.response!)
+                print(response.result)
                 
                 switch response.result{
                 case .success:
                     if let jsonData = response.result.value{
-                       // print (jsonData)
+                        print (jsonData)
                         
                             if let dictionary = jsonData as? [String: AnyObject]{
                                 
@@ -284,7 +284,7 @@ class APIService {
                                 if let value = dictionary["category"] as? String{
                                     propertyData.category.next(value)
                                 }
-                                if let value = dictionary["catCode"] as? Int{
+                                if let value = dictionary["categoryCode"] as? Int{
                                     propertyData.catCode.next(value)
                                 }
                                 if let value = dictionary["objectType"] as? String{
@@ -296,7 +296,7 @@ class APIService {
                                 if let value = dictionary["appraisalValue"] as? Float{
                                     propertyData.appraisalValue.next(value)
                                 }
-                                if let value = dictionary["microRating"] as? Float{
+                                if let value = dictionary["qualityMicro"] as? Float{
                                     propertyData.rating.next(value)
                                 }
                                 if let value = dictionary["surfaceContract"] as? Float{
@@ -311,6 +311,8 @@ class APIService {
                                 if let value = dictionary["lift"] as? Int{
                                     propertyData.lift.next(value)
                                 }
+                                
+//                                debugPrint(propertyData)
                         }
                     }
                 case .failure( let error):

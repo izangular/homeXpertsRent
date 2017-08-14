@@ -15,4 +15,7 @@ target 'homeXpertsRent' do
 	pod ‘Validator’
 
 	pod ’SwiftOverlays’, ‘~> 3.0.0’
+
+	pod ‘GoogleMaps’
+	pod ‘GooglePlaces’
 end

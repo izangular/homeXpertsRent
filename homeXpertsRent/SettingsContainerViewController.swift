@@ -1,14 +1,14 @@
 //
-//  SettingsViewController.swift
-//  ISpotPrice
+//  TestViewController.swift
+//  homeXpertsRent
 //
-//  Created by IIT Web Dev on 09/08/17.
+//  Created by IIT Web Dev on 14/08/17.
 //  Copyright © 2017 IIT Web Dev. All rights reserved.
 //
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class SettingsContainerViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,6 @@ class SettingsViewController: UIViewController {
     }
     
 
-    @IBOutlet weak var buttonBackPressed: UIButton!
     /*
     // MARK: - Navigation
 

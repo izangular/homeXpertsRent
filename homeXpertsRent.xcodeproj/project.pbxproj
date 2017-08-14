@@ -19,7 +19,6 @@
 		FF0611231F399F4800BB3C33 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0611221F399F4800BB3C33 /* CameraViewController.swift */; };
 		FF0611251F39D0DB00BB3C33 /* ConfirmPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0611241F39D0DB00BB3C33 /* ConfirmPhotoViewController.swift */; };
 		FF0611271F39DBA400BB3C33 /* PropertyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0611261F39DBA400BB3C33 /* PropertyInfo.swift */; };
-		FF0611291F3AC9D500BB3C33 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0611281F3AC9D500BB3C33 /* SettingsViewController.swift */; };
 		FF06112B1F3ACD1100BB3C33 /* UIGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06112A1F3ACD1100BB3C33 /* UIGradientView.swift */; };
 		FF06112D1F3AFFF200BB3C33 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF06112C1F3AFFF200BB3C33 /* Storyboard.storyboard */; };
 		FF06112F1F3B019500BB3C33 /* PickerKeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF06112E1F3B019500BB3C33 /* PickerKeyValue.swift */; };
@@ -30,6 +29,8 @@
 		FF419B7A1F24AE2600163E1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF419B781F24AE2600163E1A /* Main.storyboard */; };
 		FF419B7C1F24AE2600163E1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF419B7B1F24AE2600163E1A /* Assets.xcassets */; };
 		FF419B871F24B04500163E1A /* CapturePropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF419B861F24B04500163E1A /* CapturePropertyViewController.swift */; };
+		FF5E99331F4157E200C1FB2E /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E99321F4157E200C1FB2E /* SettingsTableViewController.swift */; };
+		FF5E99351F41683E00C1FB2E /* SettingsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E99341F41683E00C1FB2E /* SettingsContainerViewController.swift */; };
 		FFBC9EB51F3091ED004996DE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC9EB41F3091ED004996DE /* APIService.swift */; };
 		FFDCC0581F3453CB006058D3 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCC0571F3453CB006058D3 /* PropertyViewController.swift */; };
 /* End PBXBuildFile section */
@@ -49,7 +50,6 @@
 		FF0611221F399F4800BB3C33 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FF0611241F39D0DB00BB3C33 /* ConfirmPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmPhotoViewController.swift; sourceTree = "<group>"; };
 		FF0611261F39DBA400BB3C33 /* PropertyInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyInfo.swift; sourceTree = "<group>"; };
-		FF0611281F3AC9D500BB3C33 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FF06112A1F3ACD1100BB3C33 /* UIGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIGradientView.swift; sourceTree = "<group>"; };
 		FF06112C1F3AFFF200BB3C33 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		FF06112E1F3B019500BB3C33 /* PickerKeyValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerKeyValue.swift; sourceTree = "<group>"; };
@@ -62,6 +62,10 @@
 		FF419B7B1F24AE2600163E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF419B801F24AE2600163E1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF419B861F24B04500163E1A /* CapturePropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturePropertyViewController.swift; sourceTree = "<group>"; };
+		FF5E99321F4157E200C1FB2E /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		FF5E99341F41683E00C1FB2E /* SettingsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainerViewController.swift; sourceTree = "<group>"; };
+		FF5E99371F416D9F00C1FB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		FF5E99381F41706C00C1FB2E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		FFBC9EB41F3091ED004996DE /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		FFDCC0571F3453CB006058D3 /* PropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +132,9 @@
 				FF0611061F37327500BB3C33 /* PickerViewController.swift */,
 				FF0611221F399F4800BB3C33 /* CameraViewController.swift */,
 				FF0611241F39D0DB00BB3C33 /* ConfirmPhotoViewController.swift */,
-				FF0611281F3AC9D500BB3C33 /* SettingsViewController.swift */,
 				FF0611321F3C4DB000BB3C33 /* FloatViewController.swift */,
+				FF5E99341F41683E00C1FB2E /* SettingsContainerViewController.swift */,
+				FF5E99321F4157E200C1FB2E /* SettingsTableViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -313,12 +318,13 @@
 				FF06111D1F39933800BB3C33 /* User.swift in Sources */,
 				FFDCC0581F3453CB006058D3 /* PropertyViewController.swift in Sources */,
 				FF1507D21F25ADC200E2AAF4 /* PropertyData.swift in Sources */,
+				FF5E99331F4157E200C1FB2E /* SettingsTableViewController.swift in Sources */,
 				FF0611071F37327500BB3C33 /* PickerViewController.swift in Sources */,
 				FF0611251F39D0DB00BB3C33 /* ConfirmPhotoViewController.swift in Sources */,
 				FF0611331F3C4DB000BB3C33 /* FloatViewController.swift in Sources */,
+				FF5E99351F41683E00C1FB2E /* SettingsContainerViewController.swift in Sources */,
 				FF0611141F385FD200BB3C33 /* LocationViewController.swift in Sources */,
 				FF0611091F38235100BB3C33 /* RegistrationViewController.swift in Sources */,
-				FF0611291F3AC9D500BB3C33 /* SettingsViewController.swift in Sources */,
 				FF419B751F24AE2600163E1A /* AppDelegate.swift in Sources */,
 				FF419B871F24B04500163E1A /* CapturePropertyViewController.swift in Sources */,
 				FF06112B1F3ACD1100BB3C33 /* UIGradientView.swift in Sources */,
@@ -340,6 +346,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FF419B791F24AE2600163E1A /* Base */,
+				FF5E99371F416D9F00C1FB2E /* en */,
+				FF5E99381F41706C00C1FB2E /* de */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -351,6 +359,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -402,6 +411,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";

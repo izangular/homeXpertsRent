@@ -5,6 +5,13 @@ PODS:
     - ReactiveKit (~> 3.5.3)
   - Cosmos (11.0.3)
   - Diff (0.5.3)
+  - GoogleMaps (2.3.1):
+    - GoogleMaps/Maps (= 2.3.1)
+  - GoogleMaps/Base (2.3.1)
+  - GoogleMaps/Maps (2.3.1):
+    - GoogleMaps/Base
+  - GooglePlaces (2.3.1):
+    - GoogleMaps/Base (= 2.3.1)
   - ReactiveKit (3.5.5)
   - SwiftOverlays (3.0.0)
   - Validator (2.1.1)
@@ -13,6 +20,8 @@ DEPENDENCIES:
   - Alamofire (~> 4.4)
   - Bond
   - Cosmos (~> 11.0)
+  - GoogleMaps
+  - GooglePlaces
   - ReactiveKit
   - SwiftOverlays (~> 3.0.0)
   - Validator
@@ -22,10 +31,12 @@ SPEC CHECKSUMS:
   Bond: bd11b6f3dc526ab9beb1e5a1369872628b33fd36
   Cosmos: eb506859929f4add2d2aec822a27efb2f718a95d
   Diff: befa1d19c32726b2b36ce915d98793e2fbde8dcc
+  GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
+  GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
   ReactiveKit: ced30f9647912f74510bd8179790cf2dfc9454c8
   SwiftOverlays: 4cdd9e4f5c7817fb6348882059eb697e11685fad
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
-PODFILE CHECKSUM: 592aa0331423ddb2cd86504cf4fcccc4932848c9
+PODFILE CHECKSUM: 27dc07bd89cadee9f8c5a16474103f1499420302
 
 COCOAPODS: 1.2.1

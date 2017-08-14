@@ -63,7 +63,7 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
     }
     
     @IBAction func buttonSettingsPressed(_ sender: Any) {
-        let settingsView = storyboard?.instantiateViewController(withIdentifier: "SettingsViewController") as! SettingsViewController
+        let settingsView = storyboard?.instantiateViewController(withIdentifier: "SettingsContainerViewController") as! SettingsContainerViewController
         
         self.present(settingsView, animated: false, completion: nil)
     }

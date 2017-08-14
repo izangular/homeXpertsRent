@@ -100,6 +100,14 @@ SOFTWARE.
 
 
 
+## GoogleMaps
+
+Copyright 2017 Google
+
+## GooglePlaces
+
+Copyright 2017 Google
+
 ## ReactiveKit
 
 The MIT License (MIT)

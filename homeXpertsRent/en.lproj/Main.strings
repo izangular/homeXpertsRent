@@ -1,0 +1,186 @@
+
+/* Class = "UILabel"; text = "LAST NAME"; ObjectID = "0e7-yD-x3m"; */
+"0e7-yD-x3m.text" = "LAST NAME";
+
+/* Class = "UILabel"; text = "Language"; ObjectID = "2nL-BU-ddO"; */
+"2nL-BU-ddO.text" = "Language";
+
+/* Class = "UITextField"; text = "Pires"; ObjectID = "5Iw-X0-WGl"; */
+"5Iw-X0-WGl.text" = "Pires";
+
+/* Class = "UILabel"; text = "ACCESS YOUR"; ObjectID = "60J-7h-Lpd"; */
+"60J-7h-Lpd.text" = "ACCESS YOUR";
+
+/* Class = "UILabel"; text = "(firstName: ErrorMessage)"; ObjectID = "6kF-TA-iWZ"; */
+"6kF-TA-iWZ.text" = "(firstName: ErrorMessage)";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "6qx-zh-YEB"; */
+"6qx-zh-YEB.text" = "1";
+
+/* Class = "UILabel"; text = "English"; ObjectID = "7lf-mB-BuF"; */
+"7lf-mB-BuF.text" = "English";
+
+/* Class = "UILabel"; text = "Year"; ObjectID = "8hK-7q-b8h"; */
+"8hK-7q-b8h.text" = "Year";
+
+/* Class = "UIButton"; normalTitle = "CONFIRM"; ObjectID = "BFX-hi-euC"; */
+"BFX-hi-euC.normalTitle" = "CONFIRM";
+
+/* Class = "UILabel"; text = "homeXperts"; ObjectID = "C9B-MV-ZhP"; */
+"C9B-MV-ZhP.text" = "homeXperts";
+
+/* Class = "UILabel"; text = "Object type"; ObjectID = "COS-wF-2XH"; */
+"COS-wF-2XH.text" = "Object type";
+
+/* Class = "UILabel"; text = "PHONE NUMBER"; ObjectID = "FmU-TN-pVx"; */
+"FmU-TN-pVx.text" = "PHONE NUMBER";
+
+/* Class = "UILabel"; text = "Contact Us"; ObjectID = "GuH-ci-jQg"; */
+"GuH-ci-jQg.text" = "Contact Us";
+
+/* Class = "UILabel"; text = "Property Type"; ObjectID = "JwI-eD-3PL"; */
+"JwI-eD-3PL.text" = "Property Type";
+
+/* Class = "UILabel"; text = "300 (m2)"; ObjectID = "K8S-gx-ZU6"; */
+"K8S-gx-ZU6.text" = "300 (m²)";
+
+/* Class = "UILabel"; text = "No"; ObjectID = "KzO-Hk-fHy"; */
+"KzO-Hk-fHy.text" = "No";
+
+/* Class = "UILabel"; text = "250'000 CHF"; ObjectID = "L9b-dY-rEz"; */
+"L9b-dY-rEz.text" = "250'000 CHF";
+
+/* Class = "UILabel"; text = "233m2"; ObjectID = "LJi-ro-Se5"; */
+"LJi-ro-Se5.text" = "233m²";
+
+/* Class = "UILabel"; text = "Est. Rent "; ObjectID = "M1N-tf-JwS"; */
+"M1N-tf-JwS.text" = "Est. Rent ";
+
+/* Class = "UILabel"; text = "Lift"; ObjectID = "MhX-oD-Uei"; */
+"MhX-oD-Uei.text" = "Lift";
+
+/* Class = "UIButton"; normalTitle = "Do not allow"; ObjectID = "NBn-2V-2u5"; */
+"NBn-2V-2u5.normalTitle" = "Do not allow";
+
+/* Class = "UIButton"; normalTitle = "Enable Location Service"; ObjectID = "OFq-EM-Brf"; */
+"OFq-EM-Brf.normalTitle" = "Enable Location Service";
+
+/* Class = "UILabel"; text = "1 (m2)"; ObjectID = "Ovo-Pf-pZp"; */
+"Ovo-Pf-pZp.text" = "1 (m²)";
+
+/* Class = "UILabel"; text = "Map of location"; ObjectID = "RUd-wO-CFO"; */
+"RUd-wO-CFO.text" = "Map of location";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "SSg-61-gff"; */
+"SSg-61-gff.text" = "Type";
+
+/* Class = "UIButton"; normalTitle = "REGISTER"; ObjectID = "VEk-1n-L4D"; */
+"VEk-1n-L4D.normalTitle" = "REGISTER";
+
+/* Class = "UILabel"; text = "3"; ObjectID = "Vn5-EM-8wL"; */
+"Vn5-EM-8wL.text" = "3";
+
+/* Class = "UILabel"; text = "Click a photo of your property"; ObjectID = "W23-tr-3ng"; */
+"W23-tr-3ng.text" = "Click a photo of your property";
+
+/* Class = "UILabel"; text = "Room Numbers (Excluding Kitchen)"; ObjectID = "WYX-7D-8QI"; */
+"WYX-7D-8QI.text" = "Room Numbers (Excluding Kitchen)";
+
+/* Class = "UILabel"; text = "FIRST NAME"; ObjectID = "Wc8-Uu-Qfd"; */
+"Wc8-Uu-Qfd.text" = "FIRST NAME";
+
+/* Class = "UIButton"; normalTitle = "ESTIMATE"; ObjectID = "Ykv-mG-D4Q"; */
+"Ykv-mG-D4Q.normalTitle" = "ESTIMATE";
+
+/* Class = "UILabel"; text = "Surface"; ObjectID = "Z2c-wM-6cY"; */
+"Z2c-wM-6cY.text" = "Surface";
+
+/* Class = "UITextField"; text = "Robinson"; ObjectID = "Zv8-C6-lW4"; */
+"Zv8-C6-lW4.text" = "Robinson";
+
+/* Class = "UILabel"; text = "LOCATION"; ObjectID = "bF3-4h-yQv"; */
+"bF3-4h-yQv.text" = "LOCATION";
+
+/* Class = "UILabel"; text = "Year of construction"; ObjectID = "c2o-Gy-0Wx"; */
+"c2o-Gy-0Wx.text" = "Year of construction";
+
+/* Class = "UILabel"; text = "1900"; ObjectID = "ciB-kW-Tus"; */
+"ciB-kW-Tus.text" = "1900";
+
+/* Class = "UISegmentedControl"; dwX-M9-kQD.segmentTitles[0] = "Haus"; ObjectID = "dwX-M9-kQD"; */
+"dwX-M9-kQD.segmentTitles[0]" = "Haus";
+
+/* Class = "UISegmentedControl"; dwX-M9-kQD.segmentTitles[1] = "Condominium"; ObjectID = "dwX-M9-kQD"; */
+"dwX-M9-kQD.segmentTitles[1]" = "Condominium";
+
+/* Class = "UILabel"; text = "We will need your location to give you a better experience. Please enable location services"; ObjectID = "e0g-4F-aBa"; */
+"e0g-4F-aBa.text" = "We will need your location to give you a better experience. Please enable location services";
+
+/* Class = "UILabel"; text = "(lastName: ErrorMessage)"; ObjectID = "eel-og-E92"; */
+"eel-og-E92.text" = "(lastName: ErrorMessage)";
+
+/* Class = "UILabel"; text = "300 m2"; ObjectID = "fWD-kT-w1z"; */
+"fWD-kT-w1z.text" = "300 m²";
+
+/* Class = "UILabel"; text = "homeXperts"; ObjectID = "fx8-xw-3v5"; */
+"fx8-xw-3v5.text" = "homeXperts";
+
+/* Class = "UILabel"; text = "(phoneNumber: ErrorMessage)"; ObjectID = "gRc-UQ-HBL"; */
+"gRc-UQ-HBL.text" = "(phoneNumber: ErrorMessage)";
+
+/* Class = "UILabel"; text = "4"; ObjectID = "gUS-GT-pzs"; */
+"gUS-GT-pzs.text" = "4";
+
+/* Class = "UILabel"; text = "Lift"; ObjectID = "h9X-5i-Tzx"; */
+"h9X-5i-Tzx.text" = "Lift";
+
+/* Class = "UITextField"; text = "1234567890"; ObjectID = "it1-ff-jSQ"; */
+"it1-ff-jSQ.text" = "1234567890";
+
+/* Class = "UILabel"; text = "Tramstrasse 10, 8050 Zurich"; ObjectID = "mQp-R1-QMk"; */
+"mQp-R1-QMk.text" = "Tramstrasse 10, 8050 Zurich";
+
+/* Class = "UILabel"; text = "EMAIL"; ObjectID = "mie-2l-8CA"; */
+"mie-2l-8CA.text" = "EMAIL";
+
+/* Class = "UILabel"; text = "Terms & Conditios"; ObjectID = "oI1-Yl-SLb"; */
+"oI1-Yl-SLb.text" = "Terms & Conditios";
+
+/* Class = "UILabel"; text = "Privacy Policy"; ObjectID = "oho-aQ-Xl3"; */
+"oho-aQ-Xl3.text" = "Privacy Policy";
+
+/* Class = "UILabel"; text = "1'460'000 CHF"; ObjectID = "rRv-Z2-U9a"; */
+"rRv-Z2-U9a.text" = "1'460'000 CHF";
+
+/* Class = "UILabel"; text = "homeXperts"; ObjectID = "rXA-yh-Wce"; */
+"rXA-yh-Wce.text" = "homeXperts";
+
+/* Class = "UIButton"; normalTitle = "Capture Photo"; ObjectID = "sLm-fL-Dxn"; */
+"sLm-fL-Dxn.normalTitle" = "Capture Photo";
+
+/* Class = "UILabel"; text = "House"; ObjectID = "svD-wi-CEj"; */
+"svD-wi-CEj.text" = "House";
+
+/* Class = "UILabel"; text = "(email: ErrorMessage)"; ObjectID = "tVV-u4-vW8"; */
+"tVV-u4-vW8.text" = "(email: ErrorMessage)";
+
+/* Class = "UILabel"; text = "Rooms"; ObjectID = "wBE-E6-SAC"; */
+"wBE-E6-SAC.text" = "Rooms";
+
+/* Class = "UILabel"; text = "homeXperts"; ObjectID = "xZR-er-DbU"; */
+"xZR-er-DbU.text" = "homeXperts";
+
+/* Class = "UITextField"; text = "pires@iazi.ch"; ObjectID = "xmc-Jj-yhR"; */
+"xmc-Jj-yhR.text" = "pires@iazi.ch";
+
+/* Class = "UILabel"; text = "Living Surface"; ObjectID = "xz3-Uv-VwM"; */
+"xz3-Uv-VwM.text" = "Living Surface";
+
+/* Class = "UILabel"; text = "Map of location"; ObjectID = "y1c-G2-MFk"; */
+"y1c-G2-MFk.text" = "Map of location";
+
+/* Class = "UILabel"; text = "2"; ObjectID = "y7v-VL-OrN"; */
+"y7v-VL-OrN.text" = "2";
+
+/* Class = "UILabel"; text = "Est. Rent"; ObjectID = "yLP-53-tIe"; */
+"yLP-53-tIe.text" = "Est. Rent";
