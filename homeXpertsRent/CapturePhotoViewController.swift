@@ -9,15 +9,20 @@
 import UIKit
 import MapKit
 import CoreLocation
+import GoogleMaps
 
 class CapturePhotoViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
-    @IBOutlet weak var mapView: MKMapView!
+//    @IBOutlet weak var mapView: MKMapView!
     
     var locationManager = CLLocationManager()
     var currentLocationCoordinates = CLLocationCoordinate2D()
     var annotation:  MKPointAnnotation?
     
+    var camera: GMSCameraPosition?
+    var mapMarker: GMSMarker?
+    
+    @IBOutlet weak var mapContainerView: GMSMapView!
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -58,6 +63,8 @@ class CapturePhotoViewController: UIViewController, MKMapViewDelegate, CLLocatio
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
             locationManager.requestWhenInUseAuthorization()
             locationManager.startUpdatingLocation()
+            
+            
         }
         
     }
@@ -125,50 +132,26 @@ class CapturePhotoViewController: UIViewController, MKMapViewDelegate, CLLocatio
         let userLocation: CLLocation = locations[0]
         self.currentLocationCoordinates = userLocation.coordinate
         
-        if annotation == nil {
-            annotation = MKPointAnnotation()
+        
+        if camera == nil {
+            camera = GMSCameraPosition.camera(withTarget: userLocation.coordinate, zoom: 14.0)
             
-            mapView.addAnnotation(annotation!)
+            mapContainerView.moveCamera(GMSCameraUpdate.setCamera(camera!))
         }
         
-        if let annotat = annotation{
-        
-            let latitude = userLocation.coordinate.latitude
-            let longitude = userLocation.coordinate.longitude
-            let lanDelta: CLLocationDegrees = 0.05
-            let lonDelta: CLLocationDegrees = 0.05
+        if mapMarker == nil {
+            mapMarker = GMSMarker()
             
-            let span = MKCoordinateSpan(latitudeDelta: lanDelta, longitudeDelta: lonDelta)
-            
-            let coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-            
-            let region = MKCoordinateRegion(center: coordinates, span: span)
-            
-            mapView.setRegion(region, animated: true)
-            
-            annotat.title = "You are here"
-        
-            annotat.coordinate = userLocation.coordinate
-        
+            mapMarker!.map = mapContainerView
+            mapMarker!.title = "You are here"
         }
-        
-//        let latitude = userLocation.coordinate.latitude
-//        
-//        let longitude = userLocation.coordinate.longitude
-//        
-//        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-        
-//        CLGeocoder().reverseGeocodeLocation(userLocation){ (placemarks, error) in
-//            
-//            if  error != nil {
-//                print(error)
-//            } else {
-//                if let placemark = placemarks?[0]{
-//                    print(placemark)
-//                }
-//            }
-//
-//        }
+    
+        if let marker = mapMarker {
+            CATransaction.begin()
+            CATransaction.setAnimationDuration(1.0)
+            marker.position = userLocation.coordinate
+            CATransaction.commit()
+            
+        }
     }
-
 }

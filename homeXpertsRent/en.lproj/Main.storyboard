@@ -582,7 +582,7 @@
                                                                     <constraint firstAttribute="bottom" secondItem="WYX-7D-8QI" secondAttribute="bottom" constant="10" id="sAj-5A-blJ"/>
                                                                 </constraints>
                                                             </view>
-                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="9ag-HJ-pDQ">
+                                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="9ag-HJ-pDQ">
                                                                 <rect key="frame" x="8" y="65" width="359" height="31"/>
                                                                 <color key="minimumTrackTintColor" red="0.98039215690000003" green="0.77647058820000003" blue="0.52549019610000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             </slider>
@@ -592,8 +592,8 @@
                                                                 <color key="textColor" red="0.48634782430000001" green="0.48633828759999997" blue="0.48634478450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUS-GT-pzs">
-                                                                <rect key="frame" x="348" y="48" width="17" height="17"/>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gUS-GT-pzs">
+                                                                <rect key="frame" x="356" y="48" width="9" height="17"/>
                                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                                                 <color key="textColor" red="0.48634782430000001" green="0.48633828759999997" blue="0.48634478450000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 <nil key="highlightedColor"/>

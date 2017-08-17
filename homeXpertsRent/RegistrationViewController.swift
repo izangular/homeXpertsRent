@@ -76,13 +76,13 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         let emailResult = textFieldEmail.validate(rules: emailRules)
         
         //Phone number
-        let phoneRule = ValidationRulePattern(pattern: "^\\+?\\s?\\d{3}\\s?\\d{3}\\s?\\d{4}$", error: ValidationError(message: "Enter valid phone"))
-        
-        var phoneRules = ValidationRuleSet<String>()
-        
-        phoneRules.add(rule: phoneRule)
-        
-        let phoneResult = textFieldPhoneNumber.validate(rules: phoneRules)
+//        let phoneRule = ValidationRulePattern(pattern: "^\\+?\\s?\\d{3}\\s?\\d{3}\\s?\\d{4}$", error: ValidationError(message: "Enter valid phone"))
+//        
+//        var phoneRules = ValidationRuleSet<String>()
+//        
+//        phoneRules.add(rule: phoneRule)
+//        
+//        let phoneResult = textFieldPhoneNumber.validate(rules: phoneRules)
         
         /////
         var tempStatus = validationDisplay(result: firstNameResult, label: labelErrorFirstName)
@@ -94,8 +94,8 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         tempStatus = validationDisplay(result: emailResult, label: labelErrorEmail)
         status = status && tempStatus
         
-        tempStatus = validationDisplay(result: phoneResult, label: labelErrorPhoneNumber)
-        status = status && tempStatus
+//        tempStatus = validationDisplay(result: phoneResult, label: labelErrorPhoneNumber)
+//        status = status && tempStatus
         
         return status
     }

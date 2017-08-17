@@ -11,6 +11,7 @@ import MapKit
 import ReactiveKit
 import Bond
 import SwiftOverlays
+import GoogleMaps
 
 class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewDelegate {
     
@@ -19,9 +20,12 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
     var image: UIImage!
     var coordinates = CLLocationCoordinate2D()
     
-    // Outlets
-    @IBOutlet weak var mapView: MKMapView!
+    var camera: GMSCameraPosition?
+    var mapMarker: GMSMarker?
     
+    // Outlets
+    
+    @IBOutlet weak var mapViewer: GMSMapView!
     @IBOutlet weak var labelSurfaceLiving: UILabel!
     @IBOutlet weak var labelRoomNumber: UILabel!
     @IBOutlet weak var labelYear: UILabel!
@@ -229,8 +233,8 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
         propertyInfo.liftText.bind(to: labelLift)
         
         //coordinates
-//        propertyInfo.latitude.next(coordinates.latitude as Double)
-//        propertyInfo.longitude.next(coordinates.longitude as Double)
+        propertyInfo.latitude.next(coordinates.latitude as Double)
+        propertyInfo.longitude.next(coordinates.longitude as Double)
         
 //        print(propertyInfo.latitude.value)
 //        print(propertyInfo.longitude.value)
@@ -260,26 +264,51 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
 
     func setMapView()
     {
-        let annotation = MKPointAnnotation()
-            
-        mapView.addAnnotation(annotation)
+//        let annotation = MKPointAnnotation()
+//            
+//        mapView.addAnnotation(annotation)
+//        
+//        let latitude = self.coordinates.latitude
+//        let longitude = self.coordinates.longitude
+//        let lanDelta: CLLocationDegrees = 0.05
+//        let lonDelta: CLLocationDegrees = 0.05
+//            
+//        let span = MKCoordinateSpan(latitudeDelta: lanDelta, longitudeDelta: lonDelta)
+//            
+//        let coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+//            
+//        let region = MKCoordinateRegion(center: coordinates, span: span)
+//            
+//        mapView.setRegion(region, animated: true)
+//            
+//        annotation.title = "You are here"
+//            
+//        annotation.coordinate = coordinates
+//        
+//        let userLocation: CLLocation = locations[0]
+//        self.currentLocationCoordinates = userLocation.coordinate
         
-        let latitude = self.coordinates.latitude
-        let longitude = self.coordinates.longitude
-        let lanDelta: CLLocationDegrees = 0.05
-        let lonDelta: CLLocationDegrees = 0.05
+        
+        if camera == nil {
+            camera = GMSCameraPosition.camera(withTarget: coordinates, zoom: 14.0)
             
-        let span = MKCoordinateSpan(latitudeDelta: lanDelta, longitudeDelta: lonDelta)
+            mapViewer.moveCamera(GMSCameraUpdate.setCamera(camera!))
+        }
+        
+        if mapMarker == nil {
+            mapMarker = GMSMarker()
             
-        let coordinates = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            mapMarker!.map = mapViewer
+            mapMarker!.title = "You are here"
+        }
+        
+        if let marker = mapMarker {
+            CATransaction.begin()
+            CATransaction.setAnimationDuration(1.0)
+            marker.position = coordinates
+            CATransaction.commit()
             
-        let region = MKCoordinateRegion(center: coordinates, span: span)
-            
-        mapView.setRegion(region, animated: true)
-            
-        annotation.title = "You are here"
-            
-        annotation.coordinate = coordinates
+        }
     }
     
     

@@ -31,6 +31,7 @@
 		FF419B871F24B04500163E1A /* CapturePropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF419B861F24B04500163E1A /* CapturePropertyViewController.swift */; };
 		FF5E99331F4157E200C1FB2E /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E99321F4157E200C1FB2E /* SettingsTableViewController.swift */; };
 		FF5E99351F41683E00C1FB2E /* SettingsContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E99341F41683E00C1FB2E /* SettingsContainerViewController.swift */; };
+		FF5E993A1F41ACB700C1FB2E /* LanguageLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5E99391F41ACB700C1FB2E /* LanguageLabel.swift */; };
 		FFBC9EB51F3091ED004996DE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFBC9EB41F3091ED004996DE /* APIService.swift */; };
 		FFDCC0581F3453CB006058D3 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFDCC0571F3453CB006058D3 /* PropertyViewController.swift */; };
 /* End PBXBuildFile section */
@@ -64,8 +65,9 @@
 		FF419B861F24B04500163E1A /* CapturePropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CapturePropertyViewController.swift; sourceTree = "<group>"; };
 		FF5E99321F4157E200C1FB2E /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 		FF5E99341F41683E00C1FB2E /* SettingsContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsContainerViewController.swift; sourceTree = "<group>"; };
-		FF5E99371F416D9F00C1FB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		FF5E99381F41706C00C1FB2E /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		FF5E99391F41ACB700C1FB2E /* LanguageLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LanguageLabel.swift; sourceTree = "<group>"; };
+		FF5E993B1F44071200C1FB2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFBC9EB41F3091ED004996DE /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		FFDCC0571F3453CB006058D3 /* PropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				FF0611191F39781100BB3C33 /* ValidationErrorType.swift */,
 				FF06112A1F3ACD1100BB3C33 /* UIGradientView.swift */,
 				FF0611301F3C1D6200BB3C33 /* TextField.swift */,
+				FF5E99391F41ACB700C1FB2E /* LanguageLabel.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -225,7 +228,7 @@
 				TargetAttributes = {
 					FF419B701F24AE2600163E1A = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = K46TQ3HVBR;
+						DevelopmentTeam = MYV4GPJ95A;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -319,6 +322,7 @@
 				FFDCC0581F3453CB006058D3 /* PropertyViewController.swift in Sources */,
 				FF1507D21F25ADC200E2AAF4 /* PropertyData.swift in Sources */,
 				FF5E99331F4157E200C1FB2E /* SettingsTableViewController.swift in Sources */,
+				FF5E993A1F41ACB700C1FB2E /* LanguageLabel.swift in Sources */,
 				FF0611071F37327500BB3C33 /* PickerViewController.swift in Sources */,
 				FF0611251F39D0DB00BB3C33 /* ConfirmPhotoViewController.swift in Sources */,
 				FF0611331F3C4DB000BB3C33 /* FloatViewController.swift in Sources */,
@@ -346,8 +350,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				FF419B791F24AE2600163E1A /* Base */,
-				FF5E99371F416D9F00C1FB2E /* en */,
 				FF5E99381F41706C00C1FB2E /* de */,
+				FF5E993B1F44071200C1FB2E /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -378,7 +382,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: IAZI, Informations- und Ausbildungszentrum für Immobilien AG (MYV4GPJ95A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: IAZI, Informations- und Ausbildungszentrum für Immobilien AG (MYV4GPJ95A)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -430,7 +435,8 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: IAZI, Informations- und Ausbildungszentrum für Immobilien AG (MYV4GPJ95A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: IAZI, Informations- und Ausbildungszentrum für Immobilien AG (MYV4GPJ95A)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -457,11 +463,14 @@
 			baseConfigurationReference = 29E137309065E7557FB0E8FD /* Pods-homeXpertsRent.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K46TQ3HVBR;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: IAZI, Informations- und Ausbildungszentrum für Immobilien AG (MYV4GPJ95A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MYV4GPJ95A;
 				INFOPLIST_FILE = homeXpertsRent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.iazi.homeXpertsRent;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.iazi.OfferedRent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -471,11 +480,14 @@
 			baseConfigurationReference = F7E4B7449DC0E147ACA7E1AC /* Pods-homeXpertsRent.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = K46TQ3HVBR;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: IAZI, Informations- und Ausbildungszentrum für Immobilien AG (MYV4GPJ95A)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = MYV4GPJ95A;
 				INFOPLIST_FILE = homeXpertsRent/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ch.iazi.homeXpertsRent;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.iazi.OfferedRent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
