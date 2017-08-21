@@ -57,7 +57,7 @@
 		FF0611301F3C1D6200BB3C33 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		FF0611321F3C4DB000BB3C33 /* FloatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatViewController.swift; sourceTree = "<group>"; };
 		FF1507D11F25ADC200E2AAF4 /* PropertyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyData.swift; sourceTree = "<group>"; };
-		FF419B711F24AE2600163E1A /* homeXpertsRent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = homeXpertsRent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF419B711F24AE2600163E1A /* rentXperts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rentXperts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF419B741F24AE2600163E1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF419B791F24AE2600163E1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF419B7B1F24AE2600163E1A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 		FF419B721F24AE2600163E1A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF419B711F24AE2600163E1A /* homeXpertsRent.app */,
+				FF419B711F24AE2600163E1A /* rentXperts.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,9 +196,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF419B701F24AE2600163E1A /* homeXpertsRent */ = {
+		FF419B701F24AE2600163E1A /* rentXperts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF419B831F24AE2600163E1A /* Build configuration list for PBXNativeTarget "homeXpertsRent" */;
+			buildConfigurationList = FF419B831F24AE2600163E1A /* Build configuration list for PBXNativeTarget "rentXperts" */;
 			buildPhases = (
 				FFB026E487BC9CFDA8F26E9A /* [CP] Check Pods Manifest.lock */,
 				FF419B6D1F24AE2600163E1A /* Sources */,
@@ -211,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = homeXpertsRent;
+			name = rentXperts;
 			productName = ISpotPrice;
-			productReference = FF419B711F24AE2600163E1A /* homeXpertsRent.app */;
+			productReference = FF419B711F24AE2600163E1A /* rentXperts.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +233,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF419B6C1F24AE2600163E1A /* Build configuration list for PBXProject "homeXpertsRent" */;
+			buildConfigurationList = FF419B6C1F24AE2600163E1A /* Build configuration list for PBXProject "rentXperts" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -246,7 +246,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF419B701F24AE2600163E1A /* homeXpertsRent */,
+				FF419B701F24AE2600163E1A /* rentXperts */,
 			);
 		};
 /* End PBXProject section */
@@ -495,7 +495,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF419B6C1F24AE2600163E1A /* Build configuration list for PBXProject "homeXpertsRent" */ = {
+		FF419B6C1F24AE2600163E1A /* Build configuration list for PBXProject "rentXperts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF419B811F24AE2600163E1A /* Debug */,
@@ -504,7 +504,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF419B831F24AE2600163E1A /* Build configuration list for PBXNativeTarget "homeXpertsRent" */ = {
+		FF419B831F24AE2600163E1A /* Build configuration list for PBXNativeTarget "rentXperts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF419B841F24AE2600163E1A /* Debug */,

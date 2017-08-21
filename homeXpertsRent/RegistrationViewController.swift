@@ -41,6 +41,8 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+    
+    
     func bindData(){
         
         user.firstName.bidirectionalBind(to: textFieldFirstName.reactive.text)
@@ -178,37 +180,12 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
             })
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    //text field handling
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        
     }
-    */
+    
 
-}
-
-extension UITextField{
-    func setBottomBorder(){
-        
-//        self.borderStyle = UITextBorderStyle.none
-        
-//        let border = CALayer()
-//        let width = CGFloat(2.0)
-//        border.borderColor = UIColor.white.cgColor
-//        border.frame = CGRect(x: 0, y: self.frame.size.height - width, width: self.frame.size.width, height: self.frame.size.height)
-//        
-//        border.borderWidth = width
-//        self.layer.addSublayer(border)
-//        self.layer.masksToBounds = true
-        
-        let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0.0, y: self.frame.height-1, width: self.frame.width-20, height: 1.0)
-//        bottomLine.frame = CGrec(x: 0.0, y: x)
-        bottomLine.backgroundColor = UIColor.white.cgColor
-        self.borderStyle = UITextBorderStyle.none
-        self.layer.addSublayer(bottomLine)
-    }
 }

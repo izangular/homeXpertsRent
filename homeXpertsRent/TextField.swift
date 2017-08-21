@@ -20,23 +20,18 @@ class TextField : UITextField {
     override func draw(_ rect: CGRect) {
         
         let bottomLine = CALayer()
-//        bottomLine.frame = CGRect(0.0, self.frame.height - 1, self.frame.width, 1.0)
         bottomLine.frame = CGRect(x: 0.0, y: self.frame.height-1, width: self.frame.width, height: 1.0)
         bottomLine.backgroundColor = UIColor.white.cgColor
         self.borderStyle = UITextBorderStyle.none
         self.layer.addSublayer(bottomLine)
         
-//        let startingPoint   = CGPoint(x: rect.minX, y: rect.maxY)
-//        let endingPoint     = CGPoint(x: rect.maxX, y: rect.maxY)
-//        
-//        let path = UIBezierPath()
-//        
-//        path.move(to: startingPoint)
-//        path.addLine(to: endingPoint)
-//        path.lineWidth = 2.0
-//        
-//        tintColor.setStroke()
-//        
-//        path.stroke()
+//        let borderBottom = CALayer()
+//        let borderWidth = CGFloat(2.0)
+//        borderBottom.borderColor = UIColor.white.cgColor
+//        borderBottom.frame = CGRect(x: 0, y: self.frame.height - 1.0, width: self.frame.width, height: self.frame.height - 1.0)
+//        borderBottom.borderWidth = borderWidth
+//        self.layer.addSublayer(borderBottom)
+//        self.layer.masksToBounds = true
+        
     }
 }
