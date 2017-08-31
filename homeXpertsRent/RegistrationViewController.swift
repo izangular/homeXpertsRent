@@ -23,10 +23,15 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var labelErrorEmail: UILabel!
     @IBOutlet weak var labelErrorPhoneNumber: UILabel!
     
+    @IBOutlet weak var viewTouch: UIView!
+    var activeField: UITextField!
     
     let user = User()
     
     var completionHandler: ((Void) -> Void)?
+    
+    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var ContainerView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +44,21 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         bindData()
         
+        registerForKeyboardNotifications()
+        
+//        let tap = UITapGestureRecognizer(target: self, action: Selector(("handleTap:")))
+//        
+//        self.ContainerView.addGestureRecognizer(tap)
     }
     
+//    func handleTap(recognizer: UITapGestureRecognizer) {
+//        
+//        self.view.endEditing(true)
+//    }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        deregisterForKeyboardNotifications()
+    }
     
     func bindData(){
         
@@ -125,6 +142,7 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
         self.view.endEditing(true)
     }
     
@@ -140,13 +158,13 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         
         if validationStatus {
             
-//            SwiftOverlays.showBlockingWaitOverlay()
+            SwiftOverlays.showBlockingWaitOverlay()
             
             let apiService = APIService()
             
             apiService.callServiceRegister(user: self.user, completion: { (status, message) in
                 
-//                SwiftOverlays.removeAllBlockingOverlays()
+                SwiftOverlays.removeAllBlockingOverlays()
                 
                 if status == 0 {
                     UserDefaults.standard.set("1", forKey: "Registered")
@@ -183,9 +201,68 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
     //text field handling
     
-    func textFieldDidBeginEditing(_ textField: UITextField) {
+}
+
+extension RegistrationViewController {
+    
+    func registerForKeyboardNotifications() {
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWasShown(notification:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillBeHidden(notification:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+    }
+    
+    func deregisterForKeyboardNotifications() {
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         
     }
     
-
+    func keyboardWasShown(notification: NSNotification) {
+        
+        self.scrollView.isScrollEnabled = true
+        var info = notification.userInfo!
+        
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
+        
+        let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, keyboardSize!.height + 3, 0.0)
+        
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+        
+        var aRect : CGRect = self.view.frame
+        aRect.size.height -= keyboardSize!.height
+        if let activeField = self.activeField {
+            
+            if !aRect.contains(activeField.frame.origin) {
+                
+                self.scrollView.scrollRectToVisible(activeField.frame, animated: true)
+            }
+        }
+    }
+    
+    func keyboardWillBeHidden(notification: NSNotification) {
+        
+        var info = notification.userInfo!
+        
+        let keyboardSize = (info[UIKeyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue.size
+        
+        let contentInsets : UIEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, -(keyboardSize!.height + 3), 0.0)
+        
+        self.scrollView.contentInset = contentInsets
+        self.scrollView.scrollIndicatorInsets = contentInsets
+        
+        self.view.endEditing(true)
+        self.scrollView.isScrollEnabled = false
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeField = textField
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        activeField = nil
+    }
 }

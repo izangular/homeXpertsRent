@@ -12,6 +12,7 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (2.3.1):
     - GoogleMaps/Base (= 2.3.1)
+  - JVFloatLabeledTextField (1.2.0)
   - ReactiveKit (3.5.5)
   - SwiftOverlays (3.0.0)
   - Validator (2.1.1)
@@ -22,6 +23,7 @@ DEPENDENCIES:
   - Cosmos (~> 11.0)
   - GoogleMaps
   - GooglePlaces
+  - JVFloatLabeledTextField
   - ReactiveKit
   - SwiftOverlays (~> 3.0.0)
   - Validator
@@ -33,10 +35,11 @@ SPEC CHECKSUMS:
   Diff: befa1d19c32726b2b36ce915d98793e2fbde8dcc
   GoogleMaps: c66a71058b9b1294bcdd5463a68e357fa50c079f
   GooglePlaces: 4a7b22debfa1af65017b82943431822607e45201
+  JVFloatLabeledTextField: 96c0c1b6739001801340d25b86aff990d67c4181
   ReactiveKit: ced30f9647912f74510bd8179790cf2dfc9454c8
   SwiftOverlays: 4cdd9e4f5c7817fb6348882059eb697e11685fad
   Validator: b1793fbfd0046097551d0edd18e2c30792d69ef5
 
-PODFILE CHECKSUM: 27dc07bd89cadee9f8c5a16474103f1499420302
+PODFILE CHECKSUM: b6012d86dfe6fca8f45844cff30dec7b658277c2
 
 COCOAPODS: 1.2.1

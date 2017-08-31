@@ -14,7 +14,7 @@
         <!--Float View Controller-->
         <scene sceneID="tfw-V2-BbO">
             <objects>
-                <viewController storyboardIdentifier="FloatViewController" id="ajv-CL-psb" customClass="FloatViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FloatViewController" id="ajv-CL-psb" customClass="FloatViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zRR-kB-R78"/>
                         <viewControllerLayoutGuide type="bottom" id="Kfu-wD-EJK"/>
@@ -193,7 +193,7 @@
         <!--Property View Controller-->
         <scene sceneID="0Cb-g4-Uha">
             <objects>
-                <viewController storyboardIdentifier="PropertyViewController" id="4rb-Lf-aex" customClass="PropertyViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PropertyViewController" id="4rb-Lf-aex" customClass="PropertyViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LQQ-Jg-17K"/>
                         <viewControllerLayoutGuide type="bottom" id="Xsh-LG-KZb"/>
@@ -897,7 +897,7 @@
         <!--Capture Photo View Controller-->
         <scene sceneID="dfX-Sa-vOE">
             <objects>
-                <viewController storyboardIdentifier="CapturePhotoViewController" id="rTc-yK-Z3O" customClass="CapturePhotoViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CapturePhotoViewController" id="rTc-yK-Z3O" customClass="CapturePhotoViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P86-Ok-PHJ"/>
                         <viewControllerLayoutGuide type="bottom" id="acR-5n-Nm5"/>
@@ -916,7 +916,7 @@
                                             <action selector="buttonCapturePressed:" destination="rTc-yK-Z3O" eventType="touchUpInside" id="xaX-bA-5rE"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click a photo of your property" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W23-tr-3ng" customClass="LanguageLabel" customModule="homeXpertsRent" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click a photo of your property" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W23-tr-3ng" customClass="LanguageLabel" customModule="rentXperts" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="142" width="414" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1055,7 +1055,7 @@
         <!--Location View Controller-->
         <scene sceneID="wJM-jA-y2v">
             <objects>
-                <viewController storyboardIdentifier="LocationViewController" id="xaO-id-IrP" customClass="LocationViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LocationViewController" id="xaO-id-IrP" customClass="LocationViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xfh-g8-X7l"/>
                         <viewControllerLayoutGuide type="bottom" id="wLt-tk-Kjm"/>
@@ -1133,7 +1133,7 @@
         <!--Settings Table View Controller-->
         <scene sceneID="oa2-vi-ESX">
             <objects>
-                <tableViewController storyboardIdentifier="SettingsTableViewController" id="on4-r6-R2w" customClass="SettingsTableViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SettingsTableViewController" id="on4-r6-R2w" customClass="SettingsTableViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="40" sectionFooterHeight="28" id="Ia0-Bw-RQX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1337,7 +1337,7 @@
         <!--Settings Container View Controller-->
         <scene sceneID="cmz-qb-yLe">
             <objects>
-                <viewController storyboardIdentifier="SettingsContainerViewController" id="Qup-k5-cTp" customClass="SettingsContainerViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsContainerViewController" id="Qup-k5-cTp" customClass="SettingsContainerViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DUu-s8-sFd"/>
                         <viewControllerLayoutGuide type="bottom" id="Y1r-XY-wXW"/>
@@ -1399,7 +1399,7 @@
         <!--Registration View Controller-->
         <scene sceneID="lgM-fz-ulw">
             <objects>
-                <viewController storyboardIdentifier="RegistrationViewController" id="sen-Vr-act" customClass="RegistrationViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationViewController" id="sen-Vr-act" customClass="RegistrationViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cuo-Dq-NAP"/>
                         <viewControllerLayoutGuide type="bottom" id="HTa-WK-66C"/>
@@ -1444,7 +1444,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Robinson" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-C6-lW4" customClass="TextField" customModule="homeXpertsRent" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Robinson" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Zv8-C6-lW4" customClass="TextField" customModule="rentXperts" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="34" width="324" height="25"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -1457,7 +1457,7 @@
                                                             <outlet property="delegate" destination="sen-Vr-act" id="jtU-fh-X4v"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pires" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-X0-WGl" customClass="TextField" customModule="homeXpertsRent" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Pires" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-X0-WGl" customClass="TextField" customModule="rentXperts" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="108.33333333333334" width="324" height="29.999999999999972"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -1470,7 +1470,7 @@
                                                             <outlet property="delegate" destination="sen-Vr-act" id="RTq-Ho-vWI"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pires@iazi.ch" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmc-Jj-yhR" customClass="TextField" customModule="homeXpertsRent" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="pires@iazi.ch" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmc-Jj-yhR" customClass="TextField" customModule="rentXperts" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="197.66666666666669" width="324" height="30"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -1483,7 +1483,7 @@
                                                             <outlet property="delegate" destination="sen-Vr-act" id="olI-yP-lfS"/>
                                                         </connections>
                                                     </textField>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234567890" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="it1-ff-jSQ" customClass="TextField" customModule="homeXpertsRent" customModuleProvider="target">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234567890" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="it1-ff-jSQ" customClass="TextField" customModule="rentXperts" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="287" width="324" height="30"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                         <constraints>
@@ -1628,7 +1628,7 @@
         <!--Camera View Controller-->
         <scene sceneID="beo-cN-9Mq">
             <objects>
-                <viewController storyboardIdentifier="CameraViewController" id="LXo-Io-pvs" customClass="CameraViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraViewController" id="LXo-Io-pvs" customClass="CameraViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OLZ-dp-DFq"/>
                         <viewControllerLayoutGuide type="bottom" id="P8q-Dn-eeQ"/>
@@ -1693,7 +1693,7 @@
         <!--Confirm Photo View Controller-->
         <scene sceneID="5Cu-ch-z6Z">
             <objects>
-                <viewController storyboardIdentifier="ConfirmPhotoViewController" id="zHI-fp-Blc" customClass="ConfirmPhotoViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmPhotoViewController" id="zHI-fp-Blc" customClass="ConfirmPhotoViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6PE-Dl-278"/>
                         <viewControllerLayoutGuide type="bottom" id="qqD-RS-BmA"/>
@@ -1782,7 +1782,7 @@
         <!--PickerVIewController-->
         <scene sceneID="ryd-qy-1Hk">
             <objects>
-                <viewController storyboardIdentifier="PickerViewController" id="v9a-E8-JFv" userLabel="PickerVIewController" customClass="PickerViewController" customModule="homeXpertsRent" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PickerViewController" id="v9a-E8-JFv" userLabel="PickerVIewController" customClass="PickerViewController" customModule="rentXperts" customModuleProvider="target" sceneMemberID="viewController">
                     <visualEffectView key="view" opaque="NO" contentMode="scaleToFill" id="iui-uP-7EK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>

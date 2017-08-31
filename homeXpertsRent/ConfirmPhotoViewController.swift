@@ -22,7 +22,8 @@ class ConfirmPhotoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        loadImage()
+        
+        initData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,6 +31,10 @@ class ConfirmPhotoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func initData(){
+        
+        loadImage()
+    }
     
     func loadImage(){
         

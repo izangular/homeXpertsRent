@@ -53,6 +53,13 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
 
         // Do any additional setup after loading the view.
         
+        emptyView = EmptyView(frame: CGRect(x: 0, y: viewHeader.frame.origin.y + viewHeader.bounds.height
+                                , width: view.bounds.width, height: view.bounds.height - (viewHeader.bounds.height+viewHeader.frame.origin.y )))
+        view.addSubview(emptyView)
+        view.bringSubview(toFront: emptyView)
+        emptyView.alpha = 1
+        emptyView.rotate()
+        
         buttonEstimate.isEnabled = false
         if image != nil {
             loadData()
@@ -98,9 +105,14 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
         floatingView.didMove(toParentViewController: self)
     }
     
+    var emptyView = EmptyView()
+    
     func loadData()
     {
-        SwiftOverlays.showBlockingWaitOverlay()
+//        SwiftOverlays.showBlockingWaitOverlay()
+        
+        
+        
         
         bindData()
         
@@ -111,25 +123,35 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
         apiService.callOfferedRentDefaultService(propertyData: propertyInfo) { (status) in
             
             
-            SwiftOverlays.removeAllBlockingOverlays()
-            
+//            SwiftOverlays.removeAllBlockingOverlays()
+            self.emptyView.stopRotating()
             if status == 0 {
-                self.buttonEstimate.isEnabled = true
+                
+                if self.propertyInfo.catCode.value == -1 {
+                    let msg = "Looks like your picture is not proper Real estate property picture. \n\nOur image processing tools says picture looks like of \"\(self.propertyInfo.category.value)\" \n\nPlease click proper picture and valuate again"
+                    
+                    self.emptyView.showMessage(message: msg)
+                }
+                else {
+                    self.buttonEstimate.isEnabled = true
+                    self.emptyView.alpha = 0
+                }
                 
             } else {
                 
-                let alert = UIAlertController(title: "Property view", message: "Service error", preferredStyle: .alert)
-                
-                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
-                    
-                    self.dismiss(animated: false, completion: {
-                       
-                    })
-                })
-                
-                alert.addAction(okAction)
-                
-                self.present(alert, animated: true, completion: nil)
+                self.emptyView.showMessage(message: "Service error")
+//                let alert = UIAlertController(title: "Property view", message: "Service error", preferredStyle: .alert)
+//                
+//                let okAction = UIAlertAction(title: "OK", style: .default, handler: { (action) -> Void in
+//                    
+//                    self.dismiss(animated: false, completion: {
+//                       
+//                    })
+//                })
+//                
+//                alert.addAction(okAction)
+//                
+//                self.present(alert, animated: true, completion: nil)
             }
             
         }
@@ -190,17 +212,13 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
                 let base64Image = imageData.base64EncodedString()
                 
                 propertyInfo.imageBase64String = base64Image
-//                print(base64Image.characters.count)
+                //                print(base64Image.characters.count)
                 
-    //            propertyInfo.imageBase64 = base64Image as NSData
+                //            propertyInfo.imageBase64 = base64Image as NSData
             }
         }
         
-//        if let imageData = UIImagePNGRepresentation(image) {
-//            let base64Image = imageData.base64EncodedString(options: .lineLength64Characters)
-//            
-//            propertyInfo.imageBase64PngString = base64Image
-//        }
+//        propertyInfo.imageBase64String = image.getBase64()
         
         imageView.image = image
         
@@ -211,7 +229,9 @@ class PropertyViewController: UIViewController, MKMapViewDelegate, UIScrollViewD
             .bind(to: labelAddress)
         
         // appraised value
-        propertyInfo.appraisalValue.map{"\($0)"}.bind(to: labelAppraisalValue)
+        propertyInfo.appraisalValue.map{
+            "\(Int($0)) CHF"
+        }.bind(to: labelAppraisalValue)
         
         //Surface Contract
         propertyInfo.surfaceContract.map{ round($0/1)/1}.bind(to: sliderSurfaceLiving)

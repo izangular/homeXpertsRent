@@ -56,13 +56,15 @@ class LocationViewController: UIViewController, CLLocationManagerDelegate {
 
     @IBAction func buttonEnableServicePressed(_ sender: Any) {
         
-        let authStatus = CLLocationManager.authorizationStatus()
-        
-        if authStatus == .notDetermined || authStatus == .denied {
-            if let url = URL(string: UIApplicationOpenSettingsURLString){
-                UIApplication.shared.openURL(url)
-            }
-        }
+//        let authStatus = CLLocationManager.authorizationStatus()
+//        
+//        if authStatus == .notDetermined || authStatus == .denied {
+//            if let url = URL(string: UIApplicationOpenSettingsURLString){
+//                UIApplication.shared.openURL(url)
+//            }
+//        }
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.delegate = self
     }
     
     

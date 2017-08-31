@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,28 +18,46 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash%202" translatesAutoresizingMaskIntoConstraints="NO" id="YVF-6R-R20">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch" translatesAutoresizingMaskIntoConstraints="NO" id="CA2-tY-Gfv">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rentXperts_Label" translatesAutoresizingMaskIntoConstraints="NO" id="fVi-6B-NTI">
+                                <rect key="frame" x="62.5" y="296" width="250" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="9qN-WG-WBq"/>
+                                    <constraint firstAttribute="height" constant="70" id="cbF-il-yui"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Know your property rent" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7a-Cy-TY9">
+                                <rect key="frame" x="70" y="366" width="235" height="25.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="YVF-6R-R20" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="0yj-q3-p0l"/>
-                            <constraint firstItem="YVF-6R-R20" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Mnt-pY-99t"/>
-                            <constraint firstAttribute="trailing" secondItem="YVF-6R-R20" secondAttribute="trailing" id="Xkt-Mk-fMj"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="YVF-6R-R20" secondAttribute="bottom" id="p9e-b2-X0a"/>
+                            <constraint firstItem="R7a-Cy-TY9" firstAttribute="top" secondItem="fVi-6B-NTI" secondAttribute="bottom" id="46O-0i-NB3"/>
+                            <constraint firstItem="fVi-6B-NTI" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="276" id="A1s-5u-f5X"/>
+                            <constraint firstItem="R7a-Cy-TY9" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D9V-dt-Uvo"/>
+                            <constraint firstItem="CA2-tY-Gfv" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="RRR-yA-1mg"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="CA2-tY-Gfv" secondAttribute="bottom" id="YLs-8G-UpY"/>
+                            <constraint firstItem="CA2-tY-Gfv" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="b1C-F5-BdF"/>
+                            <constraint firstAttribute="trailing" secondItem="CA2-tY-Gfv" secondAttribute="trailing" id="mhI-GV-HCl"/>
+                            <constraint firstItem="fVi-6B-NTI" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="zkt-TR-WGh"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+            <point key="canvasLocation" x="12" y="377.36131934032989"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Splash%202" width="375" height="667"/>
+        <image name="Launch" width="375" height="667"/>
+        <image name="rentXperts_Label" width="802" height="236"/>
     </resources>
 </document>
